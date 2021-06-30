@@ -1,0 +1,109 @@
+$primary: rgba(245, 89, 61, 1);
+$lightgrey: rgba(219, 219, 219, 1);
+$secondary: #274c38;
+$black: rgba(23, 23, 23, 1);
+$darkgrey: rgba(102, 97, 91, 1);
+
+.page-header {
+  min-height: 70vh;
+}
+
+.navbar {
+  a.navbar-brand {
+    padding: 0;
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+}
+.section.services {
+  .card {
+    background: $secondary;
+    color: white;
+    text-align: left;
+    a:not(.btn) {
+      color: white;
+    }
+    .card-description,
+    .card-category {
+      color: white;
+    }
+  }
+
+  .card.card-just-text .card-body {
+    padding: 40px 45px;
+    text-align: left;
+  }
+
+  .card .card-icon {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    padding: 0px 0 0px;
+  }
+  .card .card-icon i {
+    border: 0px;
+  }
+}
+
+.section.news {
+  .title {
+  }
+}
+footer {
+  img {
+    height: 60px;
+    width: auto;
+  }
+
+  .form-group {
+    .btn {
+      background: $secondary;
+    }
+  }
+}
+
+.card.card-secondary {
+  background: $secondary;
+  a:not(.btn) {
+    color: white;
+  }
+  .card-description {
+    color: white;
+  }
+}
+
+.card.card-primary {
+  background: $primary;
+  a:not(.btn) {
+    color: white;
+  }
+  .card-description {
+    color: white;
+  }
+}
+.info {
+  padding: 0px 0 30px;
+}
+
+.btn-success {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: #ffffff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.partners {
+  padding: 30px 0;
+  div.images {
+    text-align: center;
+    padding: 20px 0;
+
+    img {
+      padding: 20px;
+    }
+  }
+}

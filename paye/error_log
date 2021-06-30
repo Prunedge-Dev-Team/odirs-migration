@@ -1,0 +1,51 @@
+[09-Oct-2020 09:28:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/signUpAjax.php on line 14
+[09-Oct-2020 09:31:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 09:38:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 09:38:40 UTC] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\PAYEAPP\admin\upload/Book1.xlsx): failed to open stream: No such file or directory in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 09:38:40 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpSAngX7' to 'C:\xampp\htdocs\PAYEAPP\admin\upload/Book1.xlsx' in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 09:52:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 09:56:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 09:56:09 UTC] PHP Warning:  move_uploaded_file(admin\upload/AKOKO NE.xlsx): failed to open stream: No such file or directory in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 09:56:09 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpSiKOwe' to 'admin\upload/AKOKO NE.xlsx' in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 10:01:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:01:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:06:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:16:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:16:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:17:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:17:15 UTC] PHP Warning:  move_uploaded_file(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 10:17:15 UTC] PHP Warning:  move_uploaded_file(https://www.irs.on.gov.ng/PAYEAPP\admin\upload/AKOKO NE.xlsx): failed to open stream: no suitable wrapper could be found in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 10:17:15 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpZvw2ln' to 'https://www.irs.on.gov.ng/PAYEAPP\admin\upload/AKOKO NE.xlsx' in /home/irsongov/public_html/PAYEAPP/upload_file.php on line 27
+[09-Oct-2020 10:20:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:21:39 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:26:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/signUpAjax.php on line 14
+[09-Oct-2020 10:28:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:31:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[09-Oct-2020 10:32:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/PAYEAPP/u_header2.php on line 189
+[10-Oct-2020 10:17:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[10-Oct-2020 18:47:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[10-Oct-2020 18:47:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[11-Oct-2020 19:45:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[11-Oct-2020 19:46:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[12-Oct-2020 08:25:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[12-Oct-2020 08:26:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/u_header2.php on line 189
+[12-Oct-2020 09:00:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[12-Oct-2020 12:40:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[12-Oct-2020 12:40:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[12-Oct-2020 12:41:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[12-Oct-2020 13:24:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[12-Oct-2020 15:07:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[15-Oct-2020 07:34:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[15-Oct-2020 07:36:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[16-Oct-2020 13:15:12 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[09-Nov-2020 13:52:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[23-Nov-2020 13:12:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/irsongov/public_html/paye/signUpAjax.php on line 14
+[31-Jan-2021 19:05:44 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/irsongov/public_html/paye/u_header.php on line 3
+[31-Jan-2021 19:05:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_dashboard.php:1) in /home/irsongov/public_html/paye/u_header.php on line 11
+[31-Jan-2021 19:05:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_dashboard.php:1) in /home/irsongov/public_html/paye/u_header.php on line 94
+[31-Jan-2021 19:06:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/irsongov/public_html/paye/u_header2.php on line 3
+[31-Jan-2021 19:06:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_header2.php:1) in /home/irsongov/public_html/paye/u_header2.php on line 11
+[31-Jan-2021 19:06:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_header2.php:1) in /home/irsongov/public_html/paye/u_header2.php on line 97
+[31-Jan-2021 19:07:21 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/irsongov/public_html/paye/u_header.php on line 3
+[31-Jan-2021 19:07:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_dashboard.php:1) in /home/irsongov/public_html/paye/u_header.php on line 11
+[31-Jan-2021 19:07:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irsongov/public_html/paye/u_dashboard.php:1) in /home/irsongov/public_html/paye/u_header.php on line 94

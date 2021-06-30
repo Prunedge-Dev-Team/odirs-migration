@@ -1,0 +1,282 @@
+<?php
+    require("includes/header.php");
+?>
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+  <!-- partial:partials/_sidebar.html -->
+  <?php require("includes/navbar.php") ?>
+  <!-- partial -->
+  <div class="main-panel">
+    <div class="content-wrapper">
+
+      <div class="col-12 grid-margin">
+        <div class="card">
+          <div class="card-header">
+            <h4>Advance Search Operation</h4>
+          </div>
+          <form id="searchPropertyForm" onSubmit="return validateForm()" method="POST" action="advance_properties.php"
+            enctype="multipart/form-data" class="search-validation" novalidate>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="taxPayerInfo-tab">
+
+                  <p class="card-description mb-3">
+                    <strong>Property Information</strong>
+                  </p>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Property Tag</label>
+                        <div class="col-sm-9">
+                          <input placeholder="Please enter property ID" type="text" class="form-control"
+                            name="property_id" id="property_id" />
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">EK-TIN Number</label>
+                        <div class="col-sm-9">
+                          <input placeholder="Please enter property name" type="text" class="form-control" name="ek_tin"
+                            id="ek_tin" />
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Street Name</label>
+                        <div class="col-sm-9">
+                          <input placeholder="Please enter street name" type="text" class="form-control"
+                            name="street_name" id="street_name" />
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Area</label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="area" name="area"
+                            placeholder="Please enter property Area location" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">House Number</label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="house_number" name="house_number"
+                            placeholder="Please enter house number" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Property Owner
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="owner_name" name="owner_name"
+                            placeholder="provide owner's Name" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Contact Number
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="contact_number" name="contact_number"
+                            placeholder="eg (08033098909)" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-------------------------New Records------------------------------------->  
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Property Type
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="property_type" name="property_type"
+                            placeholder="Search by property type" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">LGA
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="lga" name="lga"
+                            placeholder="Search by LGA" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">LGA Code
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="lga_code" name="lga_code"
+                            placeholder="Search by LGA Code" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Phone
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="phone" name="phone"
+                            placeholder="Search by Phone Number" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Property Tag
+                        </label>
+                        <div class="col-sm-9">
+                          <input type="text" value="" class="form-control" id="property_tag" name="property_tag"
+                            placeholder="Search by Property Tag" />
+
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6 d-none">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Previous Bill</label>
+                        <div class="col-sm-9">
+                          <input placeholder="Enter any previous bill no" type="text" class="form-control"
+                            name="bill_number" id="bill_number" />
+                          <div class="invalid-feedback">
+                            Please provide a valid record.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                </div>
+
+              </div>
+
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <input id="btnSubmit" type="submit" name="Search" value="Search" class="btn btn-info mr-2" />
+                  <button type="reset" class="btn btn-dark">Clear</button>
+                </div>
+              </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+
+
+  <!-- partial:partials/_footer.html -->
+  <?php require("includes/footer.php" )?>
+  <!-- partial -->
+</div>
+<!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+
+
+<script>
+function validateForm() {
+  let property_id = document.getElementById("property_id").value.trim();
+  let property_name = document.getElementById("property_name").value.trim();
+  let street = document.getElementById("street").value.trim(); // street_no
+  let area = document.getElementById("area").value.trim();
+  let house_no = document.getElementById("house_no").value.trim(); // house_number
+  let contact_name = document.getElementById("contact_name").value.trim(); // owner_name
+  let contact_phone = document.getElementById("contact_phone").value.trim(); // contact_number
+
+  let property_type = document.getElementById("property_type").value.trim();
+  let lga = document.getElementById("lga").value.trim();
+  let lga_code = document.getElementById("lga_code").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let property_tag = document.getElementById("property_tag").value.trim();
+
+  if (property_id === "" && property_name === "" && street === "" &&
+    area === "" && house_no === "" && contact_name === "" && contact_phone === "" && property_type === "" &&
+    lga === "" && lga_code === "" && phone === "" && property_tag === "") {
+    alert("You must enter atleast one search criteria!")
+    return false
+  } else {
+    return true
+  }
+}
+</script>
+
+
+
+</body>
+
+</html>

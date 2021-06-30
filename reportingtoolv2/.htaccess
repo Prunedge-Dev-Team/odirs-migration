@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^reportingtoolv2\.irs\.on\.gov\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.reportingtoolv2\.irs\.on\.gov\.ng$
+RewriteRule ^/?$ "http\:\/\/www\.reportingtoolv2\.irs\.on\.gov\.ng" [R=301,L]
+

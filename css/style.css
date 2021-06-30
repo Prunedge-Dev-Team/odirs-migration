@@ -1,0 +1,80 @@
+body {
+    color: #292929;
+    /* font-family: 'Lato', Open Sans, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+    line-height: 1.6!important;
+    padding-right: 0px!important;
+    margin-bottom: 65px;
+    font-size: 16px;
+}
+
+.header {
+    margin-bottom: 40px!important;
+    min-height: 70px;
+    border-bottom: 3px solid #e8f0fe;
+}
+
+.login_wrapper {
+    max-height: 400px;
+}
+
+.form-control {
+    border-radius: 0!important;
+    font-size: smaller!important;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.tcc-navbar-nav li {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.bg-danger {
+    background-color: #ff7907!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .9);
+}
+
+p {
+    font-size: 14px!important;
+}
+
+label {
+    font-size: 14px!important;
+}
+
+button {
+    border-radius: 0!important;
+    font-size: 12px!important;
+}
+
+footer {
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    width: 100%;
+}
+
+@media(max-width:700px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    #show-case img {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
+}

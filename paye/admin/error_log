@@ -1,0 +1,31 @@
+[08-Oct-2020 17:22:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/irsongov/public_html/PAYEAPP/admin/connect.php on line 8
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(): Failed opening 'u_header2.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 12:37:59 UTC] PHP Warning:  include(): Failed opening 'u_footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(): Failed opening 'u_header2.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 12:38:13 UTC] PHP Warning:  include(): Failed opening 'u_footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(): Failed opening 'u_header2.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:16 UTC] PHP Warning:  include(): Failed opening 'u_footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(): Failed opening 'u_header2.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[09-Oct-2020 15:41:32 UTC] PHP Warning:  include(): Failed opening 'u_footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(u_header2.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(): Failed opening 'u_header2.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 2
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(u_footer.php): failed to open stream: No such file or directory in /home/irsongov/public_html/paye/admin/upload_file.php on line 252
+[12-Oct-2020 15:49:32 UTC] PHP Warning:  include(): Failed opening 'u_footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/irsongov/public_html/paye/admin/upload_file.php on line 252

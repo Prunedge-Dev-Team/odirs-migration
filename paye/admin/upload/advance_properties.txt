@@ -1,0 +1,174 @@
+<?php
+    require("includes/header.php");
+    if(isset($_GET['data'])){
+        $data = $_GET['data'];
+        $dataArray = explode(" ", $data);
+        //print_r($dataArray);
+        
+        /*$property_id = $dataArray[0] != "NA"?  $dataArray[0] : "";
+        $ek_tin = $dataArray[1] != "NA" ?  $dataArray[1] : "";
+        $street_name = $dataArray[2] != "NA" ?  $dataArray[2] : "";
+        $area = $dataArray[3] != "NA" ?  $dataArray[3] : "";
+        $house_number = $dataArray[4] != "NA" ?  $dataArray[4] : "";
+        $owner_name = $dataArray[5] != "NA" ?  $dataArray[5] : "";
+        $contact_number = $dataArray[6] != "NA" ?  $dataArray[6] : "";*/
+
+
+        $property_id = $dataArray[0] != "NA"?  $dataArray[0] : "";
+        $ek_tin = $dataArray[1] != "NA" ?  $dataArray[1] : "";
+        $street = $dataArray[2] != "NA" ?  $dataArray[2] : "";
+        $area = $dataArray[3] != "NA" ?  $dataArray[3] : "";
+
+        $house_no = $dataArray[4] != "NA" ?  $dataArray[4] : "";
+        $owner_name = $dataArray[5] != "NA" ?  $dataArray[5] : "";
+        $contact_number = $dataArray[6] != "NA" ?  $dataArray[6] : "";
+
+        $property_type = $dataArray[7] != "NA" ? $dataArray[7] : "";
+        $lga = $dataArray[8] != "NA" ? $dataArray[8] : "";
+        $lga_code = $dataArray[9] != "NA" ? $dataArray[9] : "";
+        $phone = $dataArray[10] != "NA" ? $dataArray[10] : "";
+        $property_tag = $dataArray[11] != "NA" ? $dataArray[11] : "";
+
+
+    }
+    else{
+        
+        /*$property_id = trim($_POST['property_id']);
+        $ek_tin = trim($_POST['ek_tin']);
+        $street_name = trim($_POST['street_name']);
+        $area = trim($_POST['area']);
+        $house_number = trim($_POST['house_number']);
+        $owner_name = trim($_POST['owner_name']);
+        $contact_number = trim($_POST['contact_number']);*/
+
+        $property_id = trim($_POST['property_id']);
+        $ek_tin = trim($_POST['ek_tin']);
+        $street = trim($_POST['street']);
+        $area = trim($_POST['area']);
+
+        $house_no = trim($_POST['house_no']);
+        $owner_name = trim($_POST['owner_name']);
+        $contact_number = trim($_POST['contact_number']);
+
+        $property_type = trim($_POST['property_type']);
+        $lga = trim($_POST['lga']);
+        $lga_code = trim($_POST['lga_code']);
+        $phone = trim($_POST['phone']);
+        $property_tag = trim($_POST['property_tag']);
+        
+    }
+
+    $array = array("property_id" =>$property_id ? $property_id : "NA" , 
+            "ek_tin" =>$ek_tin ? $ek_tin : "NA", 
+            "street"=>$street ? $street : "NA", 
+            "area" =>$area ? $area : "NA", 
+            "house_no" =>$house_no ? $house_no : "NA", 
+            "owner_name"=>$owner_name ? $owner_name : "NA", 
+            "contact_number"=>$contact_number ? $contact_number : "NA",
+            "property_type"=>$property_type ? $property_type : "NA",
+            "lga"=>$lga ? $lga : "NA",
+            "lga_code"=>$lga_code ? $lga_code : "NA",
+            "phone"=>$phone ? $phone : "NA",
+            "property_tag"=>$property_tag ? $property_tag : "NA");
+        
+
+    $seachQuery = "SELECT * FROM property where isConfirmed = true";
+
+    if($property_id && !empty($property_id)){
+        $seachQuery .=" AND property_tag = '$property_id'";
+    }
+    if($ek_tin && !empty($ek_tin)){
+        $seachQuery .=" AND uuid='$ek_tin'";
+    }
+    if($street && !empty($street)){
+        $seachQuery .=" AND street LIKE '%$street_name%'";
+    }
+    if($area && !empty($area)){
+        $seachQuery .=" AND area LIKE '%$area%'";
+    }
+    if($house_no && !empty($house_no)){
+        $seachQuery .=" AND house_no LIKE '%$house_no%'";
+    }
+    if($owner_name && !empty($owner_name)){
+        $seachQuery .=" AND firstname LIKE '%$owner_name%'";
+    }
+    if($contact_number && !empty($contact_number)){
+        $seachQuery .=" AND phone LIKE '%$contact_number%'";
+    }
+   
+    $seachExecQry = mysqli_query($conn, $seachQuery);
+
+?>
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+  <!-- partial:partials/_sidebar.html -->
+  <?php require("includes/navbar.php") ?>
+  <!-- partial -->
+  <div class="main-panel">
+    <div class="content-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Property lists</h4>
+              <table class="table table-bordered">
+                <thead class="font-weight-bold">
+                  <tr>
+                    <th>S/N</th>
+                    <th>Property Tag</th>
+                    <th>Property Owner</th>
+                    <th>Street Name</th>
+                    <th>Area</th>
+                    <th>Land Mark</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php 
+                    $sn = 0;
+                    while($rows = mysqli_fetch_array($seachExecQry)){                    
+                    ?>
+                  <tr>
+                    <td><?php echo ++$sn; ?></td>
+                    <td><?php echo $rows['property_tag']; ?></td>
+                    <td>
+                      <?php echo $rows['title']." ".$rows['firstname']." ".$rows['middlename']. " ". $rows['lastname']; ?>
+                    </td>
+                    <td><?php echo $rows['street']; ?></td>
+                    <td><?php echo $rows['area']; ?></td>
+                    <td><?php echo $rows['landmark']; ?></td>
+                    <td>
+                      <?php echo $rows['house_no']. " ". $rows['street']. " ". $rows['area']. " ". $rows['lga']; ?>
+                    </td>
+                    <th><a
+                        href="property_detail.php?property=<?php echo $rows['property_tag']; ?>&data=<?php echo implode(' ', $array); ?>"><i
+                          class="icon-pencil"></i></a></th>
+                  </tr>
+                  <?php
+                                        }
+                                    ?>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:../../partials/_footer.html -->
+    <?php require("includes/footer.php" )?>
+    <!-- partial -->
+  </div>
+  <!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<script src="vendors/js/vendor.bundle.base.js"></script>
+<script src="js/off-canvas.js"></script>
+<script src="js/misc.js"></script>
+</body>
+
+</html>
